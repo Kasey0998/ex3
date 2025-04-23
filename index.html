@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let doIt=(n)=>{
+            let sum = 0
+            let a = parseInt(document.getElementById('A').value)
+            let b =  parseInt(document.getElementById('B').value)
+            for (let i=0; i<n ; i++)
+        {
+            if (i % a == 0 || i % b == 0)
+            sum+=i
+        }
+        alert(sum)
+        }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    A <br>
+    <input type="text" name="A" id="A">
+    B <br>
+    <input type="text" name="B" id="B">
+    N <br>
+    <input type="text" name="N" id="n">
+    <button type="button" onclick="doIt(parseInt(document.getElementById('n').value))">Submit</button>
+</body>
+</html>
